@@ -144,7 +144,29 @@ html {
     --footer_text_color: #ffffff;
     --left_tag_item: rgb(27 42 57 / 20%);
     --card_filter: 0px;
-    --back_filter: 19px;
+    --back_filter: 5px;
     --back_filter_color: #00000030;
     --fill:#ffffff;
+}
+
+/*非常吃性能,低配手机会卡顿*/
+/*卡片模糊背景＋黑色透明卡片+白色svg**/
+html {
+    --name: 主题6;
+    --main_bg_color: url(../img/background03.jpg);
+    --main_text_color: #ffffff;
+    --gradient: linear-gradient(120deg, #bd34fe, #e0321b 30%, #41d1ff 60%);
+    --purple_text_color: #21e9edc0;
+    --purple_text_color_0: #ee107fc0;
+    --text_bg_color: #00000040;
+    --item_bg_color: #00000040;
+    --item_hover_color: #33333338;
+    --item_left_title_color: #ffffff;
+    --item_left_text_color: #ffffff;
+    --footer_text_color: #ffffff;
+    --left_tag_item: rgb(27 42 57 / 20%);
+    --card_filter: 5px;
+    --back_filter: 0px;
+    --back_filter_color: rgba(255, 255, 255, 0.6);
+     --fill:#ffffff;
 }

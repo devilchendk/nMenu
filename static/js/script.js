@@ -1,4 +1,4 @@
-console.log('%cCopyright © 2024 zyyo.net',
+console.log('%cCopyright © 2024 kaitoven.net',
     'background-color: #ff00ff; color: white; font-size: 24px; font-weight: bold; padding: 10px;'
 );
 console.log('%c   /\\_/\\', 'color: #8B4513; font-size: 20px;');
@@ -172,39 +172,39 @@ document.addEventListener('DOMContentLoaded', function () {
     fpsElement.style.left = '0';
     document.body.insertBefore(fpsElement, document.body.firstChild);
 
-    var showFPS = (function () {
-        var requestAnimationFrame = window.requestAnimationFrame ||
-            window.webkitRequestAnimationFrame ||
-            window.mozRequestAnimationFrame ||
-            window.oRequestAnimationFrame ||
-            window.msRequestAnimationFrame ||
-            function (callback) {
-                window.setTimeout(callback, 1000 / 60);
-            };
+    // var showFPS = (function () {
+    //     var requestAnimationFrame = window.requestAnimationFrame ||
+    //         window.webkitRequestAnimationFrame ||
+    //         window.mozRequestAnimationFrame ||
+    //         window.oRequestAnimationFrame ||
+    //         window.msRequestAnimationFrame ||
+    //         function (callback) {
+    //             window.setTimeout(callback, 1000 / 60);
+    //         };
 
-        var fps = 0,
-            last = Date.now(),
-            offset, step, appendFps;
+    //     var fps = 0,
+    //         last = Date.now(),
+    //         offset, step, appendFps;
 
-        step = function () {
-            offset = Date.now() - last;
-            fps += 1;
+    //     step = function () {
+    //         offset = Date.now() - last;
+    //         fps += 1;
 
-            if (offset >= 1000) {
-                last += offset;
-                appendFps(fps);
-                fps = 0;
-            }
+    //         if (offset >= 1000) {
+    //             last += offset;
+    //             appendFps(fps);
+    //             fps = 0;
+    //         }
 
-            requestAnimationFrame(step);
-        };
+    //         requestAnimationFrame(step);
+    //     };
 
-        appendFps = function (fpsValue) {
-            fpsElement.textContent = 'FPS: ' + fpsValue;
-        };
+    //     appendFps = function (fpsValue) {
+    //         fpsElement.textContent = 'FPS: ' + fpsValue;
+    //     };
 
-        step();
-    })();
+    //     step();
+    // })();
     
     
     
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-var pageLoading = document.querySelector("#zyyo-loading");
+var pageLoading = document.querySelector("#kaitoven-loading");
 window.addEventListener('load', function() {
     setTimeout(function () {
         pageLoading.style.opacity = '0';
