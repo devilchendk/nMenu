@@ -335,7 +335,7 @@ body {
   overflow: visible;
 }
 
-.index-logo .index-border {
+/* .index-logo .index-border {
   position: absolute;
   top: -10%;
   left: -25%;
@@ -344,8 +344,8 @@ body {
   pointer-events: none;
   border-radius: 50%;
   user-select: none;
-  z-index: 10; /* 确保在最上层 */
-}
+  z-index: 10;
+} */
 
 
 
