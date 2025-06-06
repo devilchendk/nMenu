@@ -214,9 +214,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
 });
 
-
-
-
 var pageLoading = document.querySelector("#kaitoven-loading");
 window.addEventListener('load', function() {
     setTimeout(function () {

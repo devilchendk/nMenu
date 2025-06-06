@@ -310,7 +310,7 @@ body {
     margin: 20px 0;
 }
 
-.index-logo {
+/* .index-logo {
     flex-shrink: 0;
     width: 40%;
     margin-top: 30px;
@@ -320,7 +320,36 @@ body {
     background-size: cover;
     border-radius: 50%;
     border: 0.5px solid #ffffff;
+} */
+.index-logo {
+  flex-shrink: 0;
+  position: relative;
+  width: 40%;
+  max-width: 200px;
+  aspect-ratio: 1 / 1;
+  margin-top: 30px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 0.5px solid #fff;
+  overflow: visible;
 }
+
+.index-logo .index-border {
+  position: absolute;
+  top: -10%;
+  left: -25%;
+  width: 138%;
+  height: 138%;
+  pointer-events: none;
+  border-radius: 50%;
+  user-select: none;
+  z-index: 10; /* 确保在最上层 */
+}
+
+
+
+
 .description {
 
     font-size: 20px;
@@ -563,13 +592,14 @@ body {
     font-weight: normal;
     font-size: 16px;
     margin: 0px;
-
+    /* align-items: center;  */
     transition: font-size 0.4s ease;
     color: var(--item_left_title_color);
 }
 
 .projectItemLeft {
     transition: width 0.4s ease;
+    /* align-items: center;  */
     height: 100%;
     width: 80%;
 }
@@ -883,7 +913,55 @@ footer {
     right: 50%;
 }
 
+/* 新增部分 */
 .lottie-icon {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 500px;
+}
+
+.skills-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: var(--main_text_color);
+}
+
+
+.skills-grid.horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skill-card {
+  flex: 1 1 200px; /* 自适应宽度，最小200px */
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--item_bg_color);
+  backdrop-filter: blur(var(--card_filter));
+  border-radius: 1rem;
+  transition: background 0.3s, transform 0.3s;
+  color: var(--main_text_color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card:hover {
+  background-color: var(--item_hover_color);
+  transform: translateY(-4px);
+}
+
+.skill-card img {
+  width: 32px;
+  height: 32px;
+  filter: drop-shadow(0 0 2px var(--purple_text_color));
+}
+
+.skill-card span {
+  font-size: 1rem;
+  flex-grow: 1;
+  text-align: left;
 }
